@@ -10,7 +10,7 @@ let getInfo = () => {
       .then((response) => response.json())
       .then((data) => {
         document.getElementById("user-inp").value = "";
-        console.log(data);
+        //console.log(data);
         console.log(data.drinks[0]);
         let myDrink = data.drinks[0];
         console.log(myDrink.strDrink);
@@ -53,5 +53,5 @@ let getInfo = () => {
       });
   }
 };
-window.addEventListener("load", getInfo);
+//window.addEventListener("load", getInfo);
 searchBtn.addEventListener("click", getInfo);
